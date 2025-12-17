@@ -15,10 +15,12 @@ The following article argues that, in the modern context, the bias-variance trad
 To aid understanding, We created a simulation using Google AI Studio:
 
 The feature x is uniformly distributed between -5 and 5. The error follows a Gaussian distribution with a standard deviation of 0.3. We use a small training set with 20 samples and a **very large test set** (10k) to find the specific causes of the test errors.
+
 ```math
 y = \sin(x) + \varepsilon,\quad x \sim U[-5,5],\ \varepsilon \sim \mathcal{N}(0,\,0.3^2)
 
 We fit the data using a **natural spline**, a method for fitting flexible functions. It uses d degrees of freedom. This means **a linear regression fit on d basis functions**. So our prediction will be represented as a linear combination of these basis functions with d parameters.
+
 ```math
 \hat{y}_i = \beta_1 N_1(x_i) + \beta_2 N_2(x_i) + \cdots + \beta_d N_d(x_i)
 
