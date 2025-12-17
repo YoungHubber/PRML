@@ -35,7 +35,7 @@ i.e. the zero-residual solution with smallest
 $\sum_{j=1}^d \hat{\beta}_j^2$
 When $d > n$, the linear least squares solution is not unique.  Among all zero-training-error solutions, we select the one with the minimum $\ell_2$ norm, known as the **minimum-norm least squares solution**.
 
-<img src="ChatGPT Image 2025年12月17日 14_55_26-1.png" width="500">
+<img src="1.png" width="500">
 
 The above graph shows the results of the simulation. It displays a double-decreasing curve. The horizontal axis represents 'd' because we added a basis function. The vertical axis represents the error. Test error is shown in blue, and training error in orange. 
 
@@ -58,7 +58,7 @@ d≈n=20), the model is forced to interpolate all training points, which can lea
 
 The third graph shows the result with 42 degrees of freedom, after double-decent. The function performs much better. These changes make the process **smoother**. Although there are slight fluctuations, hopefully not as severe as in the second graph, because the $\hat{\beta}$ value is smaller. The situation is similar in the fourth graph.
 
-![alt text](<ChatGPT Image 2025年12月17日 15_50_43-1.png>)
+![alt text](<2.png>)
 
 ## Some facts：
 
